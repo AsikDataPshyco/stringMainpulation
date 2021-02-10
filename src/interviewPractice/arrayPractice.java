@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-public class arrayPractice extends arrayDefineCondition{
+public class arrayPractice {
 
 	public static void main(String[] args) {
 
@@ -33,8 +33,7 @@ public class arrayPractice extends arrayDefineCondition{
 		simpleArraySortNumbers();
 		arrayDecendingSort();
 		arrayDecendingSortString();
-		
-		arrayDefinedCondition();
+		sortingArrayperCondition();
 	}
 
 	public static void intArrayPractice01() {
@@ -184,8 +183,23 @@ public class arrayPractice extends arrayDefineCondition{
 		
 	}
 	
-	
+	public static void sortingArrayperCondition()
+	{
+		arrayDefineCondition[] employees = {
+				new arrayDefineCondition(1,"Asik",45000),
+				new arrayDefineCondition(1,"Rahila",55000),
+				new arrayDefineCondition(1,"Inaya",65000),
+				new arrayDefineCondition(1,"Kabir",75000)
+				};
+		
+		Arrays.sort(employees);
+		System.out.println(Arrays.toString(employees));
+		
+		}		
 }
+	
+	
+
 
 
 
