@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-public class arrayPractice {
+public class arrayPractice extends findDuplicatesArray{
 
 	public static void main(String[] args) {
 
@@ -34,6 +34,11 @@ public class arrayPractice {
 		arrayDecendingSort();
 		arrayDecendingSortString();
 		sortingArrayperCondition();
+		
+		//duplicates
+		findDuplicateLoopmethod();
+		findDuplicateHashSetmethod();
+		findDuplicateHashMapmethod();
 	}
 
 	public static void intArrayPractice01() {
