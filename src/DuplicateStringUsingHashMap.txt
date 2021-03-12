@@ -1,0 +1,16 @@
+public static void hashMapDupeString(){
+ 	
+	String[] cityNames = new String[] {"NEWYORK","NEWJERSEY","DENVER","NEWYORK"};
+
+	HashMap<String,Integer> getUniqueCities = new HashMap<String,Integer>();
+
+	For(dupeCities : cityNames){
+		if(getUniqueCities.containsKey(dupeCities)){
+                     System.out.print("Duplicate City is "+ dupeCities);			
+		    }
+		else{
+		    getUniqueCities.put(dupeCities,1);
+                     }
+		}
+
+}

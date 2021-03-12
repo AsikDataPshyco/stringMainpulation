@@ -1,0 +1,35 @@
+public static void getallNonRepeating(){
+
+    String getTheString = "Spread Love Be Happy";
+    char[] stringAsArray = getTheString.toCharArray();
+    int lenghtofArray = stringAsArray.length;
+
+   Map<Character,Integer> charMapKeyValy = new LinkedHash<>();
+
+   int i = 0 ;
+
+   while(i!=lenghtofArray)
+     {
+         if(charMapKeyValy.containsKey(stringAsArray[i])==false){
+
+		charMapKeyValy.put(stringAsArray[i],1);
+         
+         }else{
+               int oldKey = charMapKeyValy.get(stringAsArray(i));
+	       int newKey = oldKey+1;
+	       charMapKeyValy.put(stringAsArray(i),newKey);	
+         }
+
+      ++i;
+     }
+
+   Set<Map.Entry<Character,Integer>> finalValues = charMapKeyValy.entrySet();
+
+   for(Map.Entry<Character,Integer> values : finalValues )
+
+	if(values.getValue==1)
+{
+print values 
+break;}
+ 
+}

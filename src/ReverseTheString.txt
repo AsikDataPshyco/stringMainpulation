@@ -1,0 +1,12 @@
+Reverse a String
+
+public static void reverseString(){
+           String reverseString = "SpreadLove";
+	   string afterReverseString = ""
+	   int rvsStringLength = reverseString.lenght();
+
+for(int i=rvsStringLength-1;i>=0,i--){
+ afterReverseString = afterReverseString + reverseString.chatAt(i);
+}
+system.out.print(" The reversed String "+afterReverseString )
+}

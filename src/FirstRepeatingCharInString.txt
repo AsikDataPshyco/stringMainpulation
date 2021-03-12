@@ -1,0 +1,37 @@
+----First Repeating Charecter in a String
+
+/*
+Problem : Print First repeating charecter in a String
+String can contain Numbers
+Spaces
+Negative numbers -1, when I declare String, - will considered as Speacial Charecter
+String should not be empty
+Can be sorted or not sorted
+Code should handle case sensitivity
+*/
+
+public static void getFirstRepChar() {
+    //declare and intialize the String Variable
+    String myStringforTest = "Spread Love and Be Happy";
+    //Convert the String to CHAR Array
+    char[] myCharforTest = myStringforTest.toCharArray();
+    //lets create a Dummy CharecterHash set 
+    HashSet<Charecter> thisCharRepeats = new HashSet<>();
+    //lets loop through the array left to right, if the char exists in the set then get that dupi
+    for(int i=0;i<myCharforTest.length-1,i++){
+       //we need a char variable to store the value
+       
+       char getWordsRepeated = myCharforTest[i];
+       
+       if(thisCharRepeats.contains(getWordsRepeated)){
+           system.out.print("The First Repeating Char "+getWordsRepeated)
+           break;
+           
+       } else {
+           thisCharRepeats.add(getWordsRepeated);
+       } 
+       
+    }
+    
+    
+}

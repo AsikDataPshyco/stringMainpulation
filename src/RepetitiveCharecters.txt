@@ -1,0 +1,25 @@
+Public Static Void repValues(){
+	String textValue="Spread the Love"
+	char[] textValueArray = textValue.ToCharArray();
+        int count;
+
+for(int i=0;i<textValueArray.length;i++) {
+    count=1;
+for(int j=i+1;j<textValueArray.length;j++){
+      
+    if(textValueArray[i]==textValueArray[j] && textValueArray[i]!='0') {
+    count++;
+    textValueArray[j]='0'
+    }
+		
+    }
+ if(count>1 && textValueArray[i]!='0') {
+system.out.println(textValueArray[i])
+}
+}
+
+
+
+
+
+ }

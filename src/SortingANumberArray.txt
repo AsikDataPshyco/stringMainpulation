@@ -1,0 +1,17 @@
+Public Static void sortNumberArray(){
+ int[] numberArray = new int[] {4,5,48,42,-1,-5,''};
+
+
+for(int i=0;i< numberArray.lenght;i++){
+  for(j=i+1;j<numberArray.lenght;j++){
+      int temp = 0;
+      if(numberArray[i]> numberArray[j] && numberArray[i]!=' ')
+       temp = numberArray[i];
+       numberArray[i] = numberArray[j];
+       numberArray[j]=temp;
+         
+      }
+   }
+
+system.out.print(numberArray[i]);
+}

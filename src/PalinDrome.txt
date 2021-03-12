@@ -1,0 +1,17 @@
+Public static void isPalindDrome(){
+	String textPalinDrome="Spread Love"
+	String reverse = "";
+        int lengtStr = textPalinDrome.length();
+
+for(int i=lengtStr-1;i>0,i--){
+
+reverse = reverse+textPalinDrome.chatAt(i);
+
+}
+
+if(textPalinDrome.contains(reverse))
+{
+system.out.print(Yes its palindrom + reverse);
+}
+
+}

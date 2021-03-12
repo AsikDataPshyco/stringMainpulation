@@ -1,0 +1,16 @@
+---remove a String from ArrayList
+
+List<String> removeHate = new ArrayList<>();
+removeHate.add("Love");
+removeHate.add("Hate");
+System.out.print(" Before Removing Hate "+removeHate);
+
+Iterator<String> itrVal = removeHate.Iterator();
+while(itrVal.hasNext())
+{
+ String rmHate = itrVal.next();
+ if(rmHate.contains("Hate")){
+ itrVal.remove();  
+ }
+System.out.print(" After Removing Hate "+removeHate);
+}
