@@ -25,14 +25,18 @@ public class findDuplicatesArray {
 	}
 
 	public static void findDuplicateHashSetmethod() {
-		String[] subjectNames = new String[] { "Chemistry", "Physics", "Tamil", "English", "French", "Chemistry" };
+		String[] v1 = new String[] { "Chemistry", "Physics", "Tamil", "English", "French", "Chemistry" };
 
-		Set<String> subjects = new HashSet<String>();
+		Set<String> v2 = new HashSet<String>();
 
-		for (String uniquSubject : subjectNames) {
+		for (String v3 : v1) {
 
-			if (!subjects.add(uniquSubject)) {
-				System.out.println("The Duplicate Subject is " + uniquSubject);
+			if (!v2.add(v3)) {
+				System.out.println("The Duplicate Subject is " + v3);
+				System.out.println(v3.charAt(1));
+				System.out.println(v3.compareTo("Chemistry"));
+				System.out.println(v3.concat(" Asik"));				
+				
 			}
 
 		}
@@ -63,14 +67,41 @@ public class findDuplicatesArray {
 				
 				if(entry.getValue()>1)
 				{
-					System.out.print("The Duplicate Sports is "+ entry.getKey());
 					
+					System.out.println("The Duplicate Sports is "+ entry.getKey());
 				}
+				
 				
 			}
 			
 		}
 
 	}
+	
+	//pass the array to method
+	
+	public static void getMinvalue(int arr[])
+	{
+		int min = arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			
+			if(min > arr[i]) {				
+				min = arr[i];
+                 System.out.println("Minimum Value "+min+ " ");				
+			}
+			else
+				{
+				System.out.println("Minimum Value "+min+" ");		
+				}
+		}
+	}
+	
+	public int[] passArray()
+	{
+		int[] arr = {1,2,3};
+		return arr;
+	}
+	
+	
 
 }
